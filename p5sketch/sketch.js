@@ -19,8 +19,8 @@ function preload() {
 function setup() {
   // setting canvas size, and putting it inside a div id
   var canvas = createCanvas(400, 200);
-  canvas.parent('defaultCanvas0');
-
+  canvas.parent('sketchContainer');
+  console.log("hello!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
 
   background(55);
 
@@ -81,3 +81,7 @@ function Droplet(_size, _shade, _locX, _locY, _velocity) {
   }
 
 }
+
+$( ".modalContainer" ).load(function() {
+  setup();
+});
